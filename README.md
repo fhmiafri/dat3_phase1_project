@@ -1,65 +1,108 @@
-# Phase 1 Project
+# MOVIE STUDIO ANALYSIS
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+**Authors**: Fahmi Afri
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+## Overview
 
-## Project Overview
+Microsoft’s new movie studio is exploring a new adventure in films industry . Prior to
+embarking into this new business venture, Microsoft is keen to be informed of the
+availability of market presence or the best genre for their first movie .
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
 
-### Business Problem
+## Business Problem
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+Microsoft's new movie studio is in the mood for a new fun to create their first ever movie . We collected several datasets from IMDB and BOM to be analysed to : Highest Rated Film Genres, Movie Genre to Movie Gross, Recommended Runtime and Highest Number Of Votes. With this, Microsoft can start narrow it down to what movie to create and focus more on the ideas of their masterpiece .
 
-### The Data
 
-In the folder `zippedData` are movie datasets from:
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+## Data
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+In the process of data gathering, reference is made to IMDB and BOM amongst
+other available resources.
+As per google search, IMDB is one of the best movie rating sites and has several
+dynamic Top Lists that we can use to find new movies and TV shows to watch whilst
+Box office Mojo(BOM) is measured in terms of the number of tickets sold or the
+amount of money raised by ticket sales (revenue). Both projection and analysis of
+these earnings/revenue is the measuring stick to determine the interest captured
+from the market, in this case the fans or moviegoers.
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
 
-## Deliverables
+***
 
-There are three deliverables for this project:
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+## Methods
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+This project uses descriptive  analysis, which consist of important datas to identify resource needs. The following tasks were performed:
 
-### Key Points
+-Research from Box Office and IMDB.
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+-Analysed the Gross income.
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+-Type of highly rated genre and Ratings. 
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+-Identified suitable running time.
 
-## Getting Started
+In order to read the datas , i merged all three datasets to give me a wider view with specific values i need .
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+![ss1](https://user-images.githubusercontent.com/112393492/189527214-0b9b1f7f-2411-428b-b401-583b2eb3d993.png)
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
 
-## Project Submission and Review
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+***
 
-## Summary
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+## Results
+It is found that Documentary in general is the preferred option, whilst Drama and Comedy films come closer
+to the range:
+
+![ss2](https://user-images.githubusercontent.com/112393492/189527645-153f2b59-1e84-4d46-9657-0fef657d2800.png)
+
+Cont..
+
+Without discounting the Action, Adventure and Sci-fi genre which appear to collect the highest number of
+domestic gross and number of votes. The below diagram displays the result:
+
+![ss3](https://user-images.githubusercontent.com/112393492/189527682-8b2a8e3d-87f4-449c-b76f-6dee97b1c2b7.png)
+
+Cont..
+
+It was discovered that out of 35,000 movies that were published between 2015 - 2019, an average
+runtime for most movies is between 90 to 110 minutes.
+
+![ss4](https://user-images.githubusercontent.com/112393492/189527694-931ed478-7afc-484c-b27d-afedaafc5c29.png)
+
+
+## Conclusions
+
+● Documentary claims its first score. Being the most rated genre, you can never put your foot wrong in
+this.
+
+● Action, Adventure, Sci-fi collected the most domestic gross with the highest number of votes.
+
+● Average running time for each movie is at 86-min. 
+
+However, based on the graph displayed, most movies’ running time is between 90-110 mins .
+To sum up, although Documentary reigns the most preferred option, I personally recommend Action,
+Adventure and Sci-fi movie genre (superhero, comic characters) based upon the significant votes received
+from the market. 
+***
+
+## For More Information
+
+Please review our full analysis in my jupyter notebook and presentations as below.
+
+For any additional questions, please contact me.
+
+## Repository Structure
+
+Describe the structure of your repository and its contents, for example:
+
+```
+├── README.md                           <- The top-level README for reviewers of this project
+├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+├── DS_Project_Presentation.pdf         <- PDF version of project presentation
+├── data                                <- Both sourced externally and generated from code
+└── images                              <- Both sourced externally and generated from code
+```
